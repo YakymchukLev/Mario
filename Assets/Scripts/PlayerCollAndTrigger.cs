@@ -23,6 +23,7 @@ public class PlayerCollAndTrigger : MonoBehaviour
             if (staticDeathParticleSystem != null)
             {
                 DeathEffect(transform.position);
+                PlayerLifes.Damage();
             }
 
             gameObject.SetActive(false);
@@ -34,6 +35,7 @@ public class PlayerCollAndTrigger : MonoBehaviour
             DeathEffect(transform.position);
             gameObject.SetActive(false);
             UIcontroller.isActive = true;
+            PlayerLifes.Damage();
         }
     }
 

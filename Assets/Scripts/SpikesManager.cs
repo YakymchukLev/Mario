@@ -13,6 +13,7 @@ public class SpikesManager : MonoBehaviour
             collision.gameObject.SetActive(false);
             UIcontroller.isActive = true;
             PlayerCollAndTrigger.DeathEffect(playerTransform.position);
+            PlayerLifes.Damage();
         }
     }
 }
